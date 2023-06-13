@@ -30,6 +30,10 @@ func main() {
 		ctx.String(http.StatusOK, "Yes From Go")
 	})
 
+	app.GET("/last", func(ctx *gin.Context) {
+		ctx.String(http.StatusOK, "last Yes From Go")
+	})
+
 	err := app.Run(":80")
 	if err != nil {
 		fmt.Println("Error while starting server", err)
