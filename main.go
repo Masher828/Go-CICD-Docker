@@ -22,6 +22,10 @@ func main() {
 		ctx.String(http.StatusOK, "Hi From Go updated")
 	})
 
+	app.GET("/hola", func(ctx *gin.Context) {
+		ctx.String(http.StatusOK, "Hola From Go updated")
+	})
+
 	err := app.Run(":80")
 	if err != nil {
 		fmt.Println("Error while starting server", err)
