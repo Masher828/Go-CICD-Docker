@@ -12,7 +12,7 @@ func TestHelloName(t *testing.T) {
 
 func TestBye(t *testing.T) {
 	name := "Manish"
-	want := "Manish"
+	want := "Mani"
 	if name != want {
 		t.Fatal("Test Case failedd")
 	}
